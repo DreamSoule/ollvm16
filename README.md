@@ -29,7 +29,7 @@ cd build_vs2022
 cmake -G "Visual Studio 17 2022" -DCMAKE_C_FLAGS=/utf-8 -DCMAKE_CXX_FLAGS=/utf-8 -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_EH=OFF -DLLVM_ENABLE_RTTI=OFF -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_PROJECTS="clang;lld" -A x64 ../llvm
 ```
 等cmake生成出解决方案后打开build_vs2022目录内的LLVM.sln点击生成解决方案即可<br>
->~~(如果编译过程中有提示部分函数是private的无法调用 把private注释即可 LLVM 16.0.6正常无报错)~~
+>~~(如果编译过程中有提示部分函数是private的无法调用的话把private注释即可 LLVM 16.0.6注释后正常无报错)~~
 # 修补细节
 > ...\llvm-project\llvm\lib\Passes\PassBuilder.cpp
 ```cpp
