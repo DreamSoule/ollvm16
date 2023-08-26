@@ -16,7 +16,7 @@
 # 功能全开
 > 命令行添加位置: 项目->属性->C/C++->Command Line
 ```bash
--mllvm -bcf -mllvm -bcf_prob=80 -mllvm -bcf_loop=3 -mllvm -sobf -mllvm -icall -mllvm -ibr -mllvm -igv -mllvm -sub -mllvm -sub_loop=3 -mllvm -split -mllvm -split_num=5
+-mllvm -fla -mllvm -bcf -mllvm -bcf_prob=80 -mllvm -bcf_loop=3 -mllvm -sobf -mllvm -icall -mllvm -ibr -mllvm -igv -mllvm -sub -mllvm -sub_loop=3 -mllvm -split -mllvm -split_num=5
 ```
 # 官方LLVM修补教程
 1.下载LLVM官方源码 [LLVM 16.0.6](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.6) 并解压<br>
